@@ -99,3 +99,47 @@ let Cube = (num) => {
 console.log(Cube(3));
 
 //11
+function gamr(a, b, callback) {
+  return callback(a, b);
+}
+let multy = (a, b) => {
+  return a * b;
+};
+console.log(gamr(50, 30, multy));
+
+//12
+
+let ber = (a) => {
+  if (a > 0) {
+    return `${a} მეტია 0ზე`;
+  } else if (a === 0) {
+    return "0ის ტოლია";
+  } else {
+    return `${a} ნაკლებია 0ზე`;
+  }
+};
+console.log(ber(10));
+
+//13
+
+halfed = function (num) {
+  return num / 2;
+};
+console.log(halfed(30));
+
+//14
+let two = (a, b, callback) => {
+  return callback(a, b);
+};
+
+let sum = (a, b) => {
+  return a + b;
+};
+console.log(two(87, 33, sum));
+
+//15
+
+let square = (nm) => {
+  return nm * nm;
+};
+console.log(square(87));
